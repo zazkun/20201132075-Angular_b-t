@@ -1,0 +1,261 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="cars.component.css">
+<!-- Header-->
+<br><br><br><br><br>
+<header class="bg-dark py-5 " style="background-image: url('assets/backround1.gif');">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder" style="color: white;">ARAÇ KİRALAMAK NE KOLAYMIŞ!</h1>
+            <p class="lead fw-normal text-white-50 mb-0">İstediğin Araç Anında Kapında</p>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/foto1.jfif" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">BMW</h5>
+                            <!-- Product price-->
+                            Fiyat: 7000$ <br>
+                            Otomatik <br>
+                            Koltuk : 5 <br>
+                            Her Kiralama İçin 900 KM
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/mercedes-benz-eq-c.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-primary rounded-pill">Kiralık</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">MERCEDES</h5>
+                            <!-- Product price-->
+                            Fiyat: 1400$ <br>
+                            Otomatik <br>
+                            Koltuk : 5 <br>
+                            Sınırsız Mesafe
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-success mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div class="col mb-5" *ngFor="let kayit of kayitlar">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/audi.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-primary rounded-pill">Kiralık</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{kayit.baslik}}</h5>
+                            <!-- Product price-->
+                            {{kayit.icerik}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-success mt-auto" href="/login" [routerLink]="['/kayitdetay',kayit.key]">Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/jeep.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">JEEP</h5>
+                            <!-- Product price-->
+                            Fiyat: 2000$ <br> 
+                            Yakıt : Dizel <br>
+                            Koltuk : 5 <br>
+                            Sınırsz Mesafe
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/z2.png" alt="..." />
+                    <!-- Product details-->
+                    
+                    <div class="card-body p-4">
+                        
+                        <div class="text-center">
+                            <span class="badge bg-primary rounded-pill">Kiralık</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">HONDA CIVIC</h5>
+                            <!-- Product price-->
+                            Fiyat: 700$ <br>
+                            Yakıt : Dizel <br>
+                            Koltuk : 5 <br>
+                            Her Kiralama İçin 800KM
+                            
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        
+                        <div class="text-center"><a class="btn btn-outline-success mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/togg.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">FORD</h5>
+                            <!-- Product price-->
+                            Fiyat: 600$ <br>
+                            Yakıt : Dizel <br>
+                            Koltuk : 5 <br>
+                            Her Kiralama İçin 900 KM
+
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/bmw-3-series.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-primary rounded-pill">Kiralık</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">BMW</h5>
+                            <!-- Product price-->
+                            Fiyat: 900$ <br>
+                            Otomatik <br>
+                            Koltuk : 5 <br>
+                            Sınırsız Mesafe
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-success mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/audi2.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">AUDİ</h5>
+                            <!-- Product price-->
+                            Fiyat: 750$ <br>
+                            otomatik <br>
+                            Koltuk : 5 <br>
+                            Her Kiralama İçin 600KM
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/corolla_lrg.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Toyota Corolla Hybrid</h5>
+                            <!-- Product price-->
+                            Fiyat: 500$ <br>
+                            Manuel <br>
+                            Koltuk : 5 <br>
+                            Her Kiralama için 800KM
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/login" >Ayrıntılar</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+<div class ="alert alert-primary text-center"> <strong>Daha Fazlası İçin</strong><span> <br> <a href=""  routerLink="/login">Hemen Üye Ol/Giriş Yap</a></span></div>
+            
+            
+            
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

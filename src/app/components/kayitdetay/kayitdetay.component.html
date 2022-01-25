@@ -1,0 +1,260 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="kayitdetay.component.css">
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+<br><br><br>
+<!-- <div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+                    
+                    <div class="preview-pic tab-content">
+                      <div class="tab-pane active" id="pic-1"><img src="assets/egea4.jpg" /></div>
+                      <div class="tab-pane" id="pic-2"><img src="assets/egea4.jpg" /></div>
+                      <div class="tab-pane" id="pic-3"><img src="assets/egea4.jpg" /></div>
+                      <div class="tab-pane" id="pic-4"><img src="assets/egea4.jpg" /></div>
+                      <div class="tab-pane" id="pic-5"><img src="assets/egea4.jpg" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                      <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="assets/egea4.jpg" /></a></li>
+                      <li><a data-target="#pic-2" data-toggle="tab"><img src="assets/egea5.jpg" /></a></li>
+                      <li><a data-target="#pic-3" data-toggle="tab"><img src="assets/egea3.jpg" /></a></li>
+                      <li><a data-target="#pic-4" data-toggle="tab"><img src="assets/egea.jpg" /></a></li>
+                      <li><a data-target="#pic-5" data-toggle="tab"><img src="assets/egea2.jfif" /></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">{{secKayit.baslik}}</h3>
+                    <p class="product-description">{{secKayit.icerik}}</p>
+                    <h4 class="price">Fiyat <span>800$</span></h4>
+                    <h4 class="price">Koltuk <span>5</span></h4>
+                    <h4 class="price">Her Kiralama İçin <span>750KM</span></h4>
+
+
+                    
+
+                    <br><br>
+                    
+                
+            
+                    
+                    <div class="action">
+                        
+                        
+                    </div>
+                </div>
+                <div class="form-group row" style="margin-left: 35%;">
+                    <label class="col-form-label text-right col-lg-3 col-sm-12">Alış Tarihi</label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                     <div class="input-group date" id="kt_datetimepicker_12" data-target-input="nearest">
+                      <input type="text" class="form-control is-valid datetimepicker-input" placeholder="Tarih Ve Saat Giriniz" data-target="#kt_datetimepicker_12"/>
+                      <div class="input-group-append" data-target="#kt_datetimepicker_12" data-toggle="datetimepicker">
+                       <span class="input-group-text">
+                        <i class="fas fa-calendar-week"></i>
+                       </span>
+                      </div>
+                      <div class="valid-feedback">
+                       Kiralanabilir
+                      </div>
+                     </div>
+                     <span class="form-text text-muted">Aracı Kullanacağınız Süre Kadar Kiralayın...</span>
+                    </div>
+                   </div>
+                   
+                   <div class="form-group row" style="margin-left: 35%;">
+                    <label class="col-form-label text-right col-lg-3 col-sm-12">İade Tarihi</label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                     <div class="input-group date" id="kt_datetimepicker_13" data-target-input="nearest">
+                      <input type="text" class="form-control is-invalid datetimepicker-input" placeholder="Tarih Ve Saat Giriniz" data-target="#kt_datetimepicker_13"/>
+                      <div class="input-group-append" data-target="#kt_datetimepicker_12" data-toggle="datetimepicker">
+                       <span class="input-group-text">
+                        <i class="fas fa-calendar-week"></i>
+                       </span>
+                      </div>
+                      <div class="valid-feedback">
+                       Ek Süre
+                      </div>
+                     </div>
+                     <span class="form-text text-muted">Aracı Kullanacağınız Süre Kadar Kiralayın...</span> <br>
+                     <button class="add-to-cart btn btn-success" type="button"  routerLink="/aracikirala"  style="margin-left: 60%;">Kirala</button>
+                    </div>
+                    
+                   </div>
+                   
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<header role="banner" aria-label="Heading">
+    <div class="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+      <div class="_cont">
+        <ol>
+          <li><a title="Back to the frontpage">Anasayfa</a></li>
+          <li><a title="">Araçlar</a></li>
+          <li>Aracınızı Kiralayın</li>
+        </ol>
+      </div>
+    </div>
+  </header>
+  <section aria-label="Main content" role="main" class="product-detail">
+    <div itemscope itemtype="http://schema.org/Product">
+      <meta itemprop="url" content="http://html-koder-test.myshopify.com/products/tommy-hilfiger-t-shirt-new-york">
+      <meta itemprop="image" content="//cdn.shopify.com/s/files/1/1047/6452/products/product_grande.png?v=1446769025">
+      <div class="shadow">
+        <div class="_cont detail-top">
+          <div class="cols">
+            <div class="left-col">
+              <div class="thumbs">
+                <a class="thumb-image active" href="assets/audi2.jpg" data-index="0">
+                  <span><img src="assets/audi2.jpg" alt="AUDİ"></span>
+                </a>
+                <a class="thumb-image" href="assets/audi.jpg" data-index="1">
+                  <span><img src="assets/audi.jpg" alt="AUDİ2"></span>
+                </a>
+                <a class="thumb-image" href="assets/AUDİ3.jpg" data-index="2">
+                  <span><img src="assets/AUDİ3.jpg" alt="AUDİ3"></span>
+                </a>
+                <a class="thumb-image" href="assets/AUDİ4.jfif" data-index="3">
+                  <span><img src="assets/AUDİ4.jfif" alt="AUDİ4"></span>
+                </a>
+              </div>
+              <div class="big">
+                <span id="big-image" class="img" quickbeam="image" style="background-image: url('assets/audi_big.jpg')"></span>
+                <div id="banner-gallery" class="swipe">
+                  <div class="swipe-wrap">
+                    <div style>="background-image: url('assets/audi2.jpg')"></div>
+                    <div style>="background-image: url('assets/audi.jpg')"></div>
+                    <div style>="background-image: url('assets/AUDİ3.jpg')"></div>
+                    <div style>="background-image: url('assets/AUDİ4.jfif')"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-col">
+              <h1 itemprop="name">AUDİ</h1>
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="http://schema.org/InStock">
+                <div class="price-shipping">
+                  <div class="price" id="price-preview" quickbeam="price" quickbeam-price="800">
+                    $800.00
+                  </div>
+                </div>
+                
+                
+                </div>
+                <!-- <form method="post" enctype="multipart/form-data" id="AddToCartForm"> -->
+                
+                  <div class="btn-and-quantity-wrap">
+                    <div class="btn-and-quantity">
+                      
+                      <div id="AddToCart" quickbeam="add-to-cart">
+                        <span id="AddToCartText"  type="button"  routerLink="/aracikirala"  >Aracı Kiralayın</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="related">
+        <div class="_cont">
+          <h2>Bu Araçlarımızıda Beğenebilirsiniz</h2>
+          <div class="collection-list cols-4" id="collection-list" data-products-per-page="4">
+            <a class="product-box">
+              <span class="img">
+                <span style="background-image: url('assets/mercedes-benz-eq-c.png')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/mercedes-benz-eq-c.png')"></span>
+              </span>
+              <span class="text">
+                <strong>MERCEDES</strong>
+                <span>
+                  From $1400
+                </span>
+              </span>
+            </a>
+            <a class="product-box">
+              <span class="img">
+                <span style="background-image: url('assets/z2.png')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/z2.png')"></span>
+              </span>
+              <span class="text">
+                <strong>HONDA CIVIC</strong>
+                <span>
+                  From $700
+                </span>
+ 
+              </span>
+            </a>
+            <a  class="product-box">
+              <span class="img">
+                <span style="background-image: url('assets/foto1.jfif')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/foto1.jfif')"></span>
+              </span>
+              <span class="text">
+                <strong>BMW</strong>
+                <span>
+                  From $700
+                </span>
+              </span>
+            </a>
+            <a class="product-box">
+              <span class="img">
+                <span style="background-image: url('assets/jeep.jpg')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/jeep.jpg')"></span>
+              </span>
+              <span class="text">
+                <strong>JEEP</strong>
+                <span>
+                  From $2000
+                </span>
+              </span>
+            </a>
+            <a class="product-box hidden">
+              <span class="img">
+                <span style="background-image: url('assets/audi2.jpg')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/audi2.jpg')"></span>
+              </span>
+              <span class="text">
+                <strong>AUDİ</strong>
+                <span>
+                  From $750
+                </span>
+              </span>
+            </a>
+            <a class="product-box hidden">
+              <span class="img">
+                <span style="background-image: url('assets/togg.jpg')" class="i first"></span>
+                <span class="i second" style="background-image: url('assets/togg.jpg')"></span>
+              </span>
+              <span class="text">
+                <strong>TOGG</strong>
+                <span>
+                  From $600
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="more-products" id="more-products-wrap"routerLink="/kirala">
+            <span id="more-products" data-rows_per_page="1">Daha Fazla</span>
+          </div>
+        </div>
+      </aside>
+    
+  
+  </section>
+  <app-footer></app-footer>

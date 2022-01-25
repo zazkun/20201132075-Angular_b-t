@@ -1,0 +1,219 @@
+
+
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>RentAcar &mdash; </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+
+    <!-- <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> --> -->
+
+  </head>
+
+  <body>
+    <app-nav></app-nav>
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      
+
+      
+      <div class="hero" style="background-image: url('assets/banner.jpg');">
+        
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10">
+
+              <div class="row mb-5">
+                <div class="col-lg-8 intro">
+                  <h1><strong>İdeal Aracınızı Bularak</strong><br> En Uygun Fiyata Kiralayın</h1>
+                  
+                  
+                </div>
+              </div>
+              
+              <form class="trip-form">
+                
+                <div class="row align-items-center">
+                  
+                  <div class="mb-3 mb-md-0 col-md-3">
+                    <select name="" id="" class="custom-select form-control">
+                      <option value="">Model Seçiniz</option>
+                      <option value="">Audi</option>
+                      <option value="">Citroen</option>
+                      <option value="">Mercedes</option>
+                      <option value="">Ferrari</option>
+                      <option value="">Toyota</option>
+                      <option value="">Ford</option>
+                      <option value="">Lamborghini</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 mb-md-0 col-md-3">
+                    <div class="form-control-wrap">
+                      <input type="text" id="cf-3" placeholder="Alış Tarihi" class="form-control datepicker px-3">
+                      <span class="icon icon-date_range"></span>
+
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-0 col-md-3">
+                    <div class="form-control-wrap">
+                      <input type="text" id="cf-4" placeholder="İade Tarihi" class="form-control datepicker px-3">
+                      <span class="icon icon-date_range"></span>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-0 col-md-3">
+                    <input type="submit" value="Şimdi Ara" class="btn btn-primary btn-block py-3" >
+                    <input class="btn btn-outline-secondary mt-2"   type="submit" routerLink="/login" *ngIf="!fbServis.OturumKontrol()" value="Giriş Yap">
+                    <input class="btn btn-outline-warning mt-2 ml-2" type="submit" routerLink="/register" *ngIf="!fbServis.OturumKontrol()" value="Kayıt Ol">
+                    
+                  </div>
+                </div>
+                
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+      <div class="site-section">
+        <div class="container">
+          <h1 class="section-heading"><strong>Nasıl Araç Kiralayabilirim ?</strong></h1>
+          <p class="mb-5">Kolay Adımlarla Araç Kiralayın...</p>   
+
+          <div class="row mb-5">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="step">
+                <span>1</span>
+                <div class="step-inner">
+                  <span class="number text-primary">01.</span>
+                  <h3>Aracınızı Seçin</h3>
+                  <p>Öncelikle Online Sitemiz Üzerinden İstediğiniz Özellikte ve Fiyattaki Aracınızı Seçiniz.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="step">
+                <span>2</span>
+                <div class="step-inner">
+                  <span class="number text-primary">02.</span>
+                  <h3>Hesap Oluşturun</h3>
+                  <p>Online Sitemiz Üzerinden Hesabınızı Oluşturup Rezervasyonunuzu Yaptırın.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="step">
+                <span>3</span>
+                <div class="step-inner">
+                  <span class="number text-primary">03.</span>
+                  <h3>Ödeme</h3>
+                  <p>Son Olarak Tek Adımda Güvenli Ödemenizi Yapıp Aracınızı Teslim Alabilirsiniz.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <a href="#" class="d-flex align-items-center play-now mx-auto">
+                
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="site-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 text-center order-lg-2">
+              <div class="img-wrap-5 mb-5">
+                <img src="assets/audi.jpg" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-5 ml-auto order-lg-1">
+              <h3 class="mb-4 section-heading"><strong>Son Model Araçları Kiralayın</strong></h3>
+              <p class="mb-5">Hem Zamandan Hem de Nakitten Tasarruf Edin. <br>Hadi Bizimle Birlikte En Güvenilir Yollara Çıkın...</p>
+              <p><a href="#" class="btn btn-primary" routerLink="/register">Kayıt Ol</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    
+
+    
+
+    <div class="site-section bg-primary py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-md-0">
+            <h2 class="mb-0 text-white">Şimdi Üye Ol <br> %10 İndirimimizden Sende Yararlan </h2>
+            <p class="mb-0 opa-7">İstediğin Araç 10 Dakika da Kapında...</p>
+          </div>
+          <div class="col-lg-5 text-md-right">
+            <a href="#" class="btn btn-primary btn-white" routerLink="/kirala">Aracınızı Kiralayın</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+      
+
+    </div>
+    <app-footer></app-footer>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script> -->
+    a
+  </body>
+
+</html>
+<router-outlet></router-outlet>
+
+
